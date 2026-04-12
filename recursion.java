@@ -11,3 +11,4 @@ public class recursion {
     recur(0);
     }
 }
+//check
