@@ -1,0 +1,7 @@
+out/
+/.idea/.gitignore
+/check-prime-num.cpp
+/.idea/DSA.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
