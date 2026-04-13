@@ -15,3 +15,4 @@ public class SumOfFirstNnum {
         f(n,0);
     }
 }
+//Parameterised
