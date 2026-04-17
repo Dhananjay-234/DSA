@@ -2,16 +2,23 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-
-
-    int arr[]={10,20,30,40,50};
+    int arr[]={10,20,30,40,12};
     int n=arr.length;
-    int sum=0;
-
+    int pro=1;
     for (int i=0;i<n;i++){
-        sum=sum+arr[i];
-    };
-    System.out.println("Sum of the arr is:"+sum);
+        pro=pro*arr[i];
+    }
+    System.out.println("product of elements of the array is:"+pro);
+
+
+//    int arr[]={10,20,30,40,50};
+//    int n=arr.length;
+//    int sum=0;
+//
+//    for (int i=0;i<n;i++){
+//        sum=sum+arr[i];
+//    };
+//    System.out.println("Sum of the arr is:"+sum);
 
 
 //        int arr[] = {1, 2, 3, 4, 23};
