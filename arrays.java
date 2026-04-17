@@ -2,14 +2,25 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-    int arr[]={2,3,4,23,-3};
-    int n=arr.length;
-    int maxVal=arr[0];
-    for (int i=0;i<n;i++){
-        if (arr[i]>maxVal)
-            maxVal=arr[i];
-    }
-    System.out.println("the maximum value in array is:"+maxVal);
+        int arr[]={2,3,4,23,-3};
+        int n=arr.length;
+        int minVal=arr[0];
+        for (int i=0;i<n;i++){
+            if (arr[i]<minVal)
+                minVal=arr[i];
+        }
+        System.out.println("the min value in array is :"+minVal);
+
+
+
+        //    int arr[]={2,3,4,23,-3};
+//    int n=arr.length;
+//    int maxVal=arr[0];
+//    for (int i=0;i<n;i++){
+//        if (arr[i]>maxVal)
+//            maxVal=arr[i];
+//    }
+//    System.out.println("the maximum value in array is:"+maxVal);
 
 
 
