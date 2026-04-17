@@ -4,13 +4,22 @@ public class arrays {
     public static void main(String[] args) {
 
 
+    int arr[]={10,20,30,40,50};
+    int n=arr.length;
+    int sum=0;
 
-        int arr[] = {1, 2, 3, 4, 23};
-        int n = arr.length;
+    for (int i=0;i<n;i++){
+        sum=sum+arr[i];
+    };
+    System.out.println("Sum of the arr is:"+sum);
 
-        for (int i = 0; i <= n - 1; i++) {
-            System.out.println(arr[i]);
-        }
+
+//        int arr[] = {1, 2, 3, 4, 23};
+//        int n = arr.length;
+//
+//        for (int i = 0; i <= n - 1; i++) {
+//            System.out.println(arr[i]);
+//        }
 
 
         //        int arr[]=new int[5];
