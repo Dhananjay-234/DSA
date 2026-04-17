@@ -2,13 +2,24 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-    int arr[]={10,20,30,40,12};
+    int arr[]={2,3,4,23,-3};
     int n=arr.length;
-    int pro=1;
+    int maxVal=arr[0];
     for (int i=0;i<n;i++){
-        pro=pro*arr[i];
+        if (arr[i]>maxVal)
+            maxVal=arr[i];
     }
-    System.out.println("product of elements of the array is:"+pro);
+    System.out.println("the maximum value in array is:"+maxVal);
+
+
+
+//    int arr[]={10,20,30,40,12};
+//    int n=arr.length;
+//    int pro=1;
+//    for (int i=0;i<n;i++){
+//        pro=pro*arr[i];
+//    }
+//    System.out.println("product of elements of the array is:"+pro);
 
 
 //    int arr[]={10,20,30,40,50};
