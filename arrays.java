@@ -2,17 +2,33 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-        int[][] arr={ {1,2,3},{4,5,6},{7,8,9} };
-        int maxVal=arr[0][0];
+        int[][] arr={ {32,54,3},{4,5,6},{7,2,9} };
+        int minVal=arr[0][0];
+
         for (int i=0;i<arr.length;i++){
             for (int j=0;j<arr[i].length;j++){
-                if (arr[i][j]>maxVal){
-                    maxVal=arr[i][j];
+                if (arr[i][j]<minVal){
+                    minVal=arr[i][j];
                 }
-
             }
         }
-        System.out.println("maximum val in 2D array is :"+maxVal);
+        System.out.println("the minimum value in 2D array is:"+minVal);
+
+
+
+
+
+//        int[][] arr={ {1,2,3},{4,5,6},{7,8,9} };
+//        int maxVal=arr[0][0];
+//        for (int i=0;i<arr.length;i++){
+//            for (int j=0;j<arr[i].length;j++){
+//                if (arr[i][j]>maxVal){
+//                    maxVal=arr[i][j];
+//                }
+//
+//            }
+//        }
+//        System.out.println("maximum val in 2D array is :"+maxVal);
 
 
 
