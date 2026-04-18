@@ -2,21 +2,53 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-        int arr[][]=new int[3][4];
-        Scanner sc=new Scanner(System.in);
+        int[][] arr={
+                {1,2,3},{4,5,6},{7,8,9}
+        };
 
-        for (int i=0;i<arr.length;i++){
-            for (int j=0;j<arr[i].length;j++){
-                System.out.println("Enter the valur of row "+i+" and column "+j);
-                arr[i][j]=sc.nextInt();
+        int mult=1;
+        for (int i=0;i< arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                mult=mult*arr[i][j];
             }
         }
-        for (int rowIndex=0;rowIndex< arr.length;rowIndex++){
-            for (int colIndex=0;colIndex<arr[rowIndex].length;colIndex++){
-                System.out.print(arr[rowIndex][colIndex]+" ");
-            }
-            System.out.println();
-        }
+        System.out.println("Multiplication of all numbers from 2 D array is:"+mult);
+
+
+
+//    int[][] arr={
+//            {1,2,3},
+//            {4,5,6},
+//            {7,8,9}
+//    };
+//    int sum=0;
+//    for (int i=0;i< arr.length;i++){
+//        for (int j=0;j<arr[i].length;j++){
+//            sum=sum+arr[i][j];
+//        }
+//    }
+//    System.out.println("Sum of all elements from 2D array is:"+sum);
+
+
+
+
+
+        //        int arr[][]=new int[3][4];
+//        Scanner sc=new Scanner(System.in);
+//
+//        for (int i=0;i<arr.length;i++){
+//            for (int j=0;j<arr[i].length;j++){
+//                System.out.println("Enter the valur of row "+i+" and column "+j);
+//                arr[i][j]=sc.nextInt();
+//            }
+//        }
+//        for (int rowIndex=0;rowIndex< arr.length;rowIndex++){
+//            for (int colIndex=0;colIndex<arr[rowIndex].length;colIndex++){
+//                System.out.print(arr[rowIndex][colIndex]+" ");
+//            }
+//            System.out.println();
+//        }
+
 
 
 
