@@ -2,14 +2,36 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-        int arr[]={2,3,4,23,-3};
-        int n=arr.length;
-        int minVal=arr[0];
-        for (int i=0;i<n;i++){
-            if (arr[i]<minVal)
-                minVal=arr[i];
+        int arr[][]={
+                {2,3,4},
+                {4,37,8},
+                {9,7,5}
+        };
+
+        int rowLen=arr.length;
+        int colLen=arr[0].length;
+
+        for (int rowIndex=0;rowIndex<rowLen;rowIndex++){
+            for (int colIndex=0;colIndex<colLen;colIndex++){
+                System.out.print(arr[rowIndex][colIndex]+" ");
+            }
+            System.out.println();
         }
-        System.out.println("the min value in array is :"+minVal);
+
+
+
+
+
+
+
+        //        int arr[]={2,3,4,23,-3};
+//        int n=arr.length;
+//        int minVal=arr[0];
+//        for (int i=0;i<n;i++){
+//            if (arr[i]<minVal)
+//                minVal=arr[i];
+//        }
+//        System.out.println("the min value in array is :"+minVal);
 
 
 
