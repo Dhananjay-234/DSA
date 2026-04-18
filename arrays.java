@@ -2,21 +2,67 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-        int[][] arr={
-                {2,3,4},
-                {4,37,8},
-                {9,7,5}
-        };
+        int arr[][]=new int[3][4];
+        Scanner sc=new Scanner(System.in);
 
-        int rowLen=arr.length;
-        int colLen=arr[0].length;
-
-        for (int rowIndex=0;rowIndex<rowLen;rowIndex++){
-            for (int colIndex=0;colIndex<colLen;colIndex++){
+        for (int i=0;i<arr.length;i++){
+            for (int j=0;j<arr[i].length;j++){
+                System.out.println("Enter the valur of row "+i+" and column "+j);
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for (int rowIndex=0;rowIndex< arr.length;rowIndex++){
+            for (int colIndex=0;colIndex<arr[rowIndex].length;colIndex++){
                 System.out.print(arr[rowIndex][colIndex]+" ");
             }
             System.out.println();
         }
+
+
+
+
+
+
+
+
+        //for different col len in each row
+//        int[][] arr={
+//                {2,3},
+//                {4,37,8,9},
+//                {9,7,5}
+//        };
+//        int rowLen=arr.length;
+//        for (int rowIndex=0;rowIndex<rowLen;rowIndex++){
+//            int colLen=arr[rowIndex].length;
+//            for (int colIndex=0;colIndex<colLen;colIndex++){
+//                System.out.print(arr[rowIndex][colIndex]+" ");
+//            }
+//            System.out.println();
+//        }
+
+
+
+
+
+
+
+
+
+        //        int[][] arr={
+//                {2,3,4},
+//                {4,37,8},
+//                {9,7,5}
+//        };
+//
+//        int rowLen=arr.length;
+//        int colLen=arr[0].length;
+//
+//        for (int rowIndex=0;rowIndex<rowLen;rowIndex++){
+//            for (int colIndex=0;colIndex<colLen;colIndex++){
+//                System.out.print(arr[rowIndex][colIndex]+" ");
+//            }
+//            System.out.println();
+//        }
 
 
 
