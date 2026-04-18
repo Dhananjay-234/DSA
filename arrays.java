@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-        int arr[][]={
+        int[][] arr={
                 {2,3,4},
                 {4,37,8},
                 {9,7,5}
